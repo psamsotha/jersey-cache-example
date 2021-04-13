@@ -1,14 +1,14 @@
 Jerey HTTP Cache Example
 ==============
 
-###Blog example from [HTTP Caching With Jersey and JAX-RS ][1]
+### Blog example from [HTTP Caching With Jersey and JAX-RS ][1]
 
 
 [1]: http://paulsamsotha.blogspot.com/2015/10/http-caching-with-jersey-and-jax-rs.html
 
 ## UPDATE
 
-If you've read the blog, then you will have notice that the implementation in this example is
+If you've read the blog, then you will have noticed that the implementation in this example is
 taken from the RESTEasy Cache module. 
 
 What I have actually been doing is just using the module. It takes a little bit of tweeking though.
@@ -69,9 +69,9 @@ We need to add the RESTEasy cache dependency, but also exclude a bunch of stuff
 <!-- End RESTEasy -->
 ```
 
-Then I created a Jersey (JAX-RS) `Feature` which includes creting a half implementation of a 
-RESTEasy specfic `HttpRequest` class. This is innjected into one of the `RESTEasy` components.
-So we make our own implementation an use Jersey's DI system to inject it.
+Then I created a Jersey (JAX-RS) `Feature` which includes creating a half implementation of a 
+RESTEasy specfic `HttpRequest` class. This is injected into one of the `RESTEasy` components.
+So we make our own implementation and use Jersey's DI system to inject it.
 
 ```java
 import java.io.InputStream;
